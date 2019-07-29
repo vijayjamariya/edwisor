@@ -1,0 +1,23 @@
+.parent {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    border-color: blue;
+    border-width: 2px;
+    border-style: solid;
+    height: 300px;
+}
+
+.my-font {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    font-weight: bolder;
+} 
+
+.parent-item {
+    margin: 1%;
+    background-color: black;
+    width: 20%;
+    height: 100px;
+}

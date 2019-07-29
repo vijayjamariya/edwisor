@@ -1,0 +1,44 @@
+<html>
+<head>
+<title> GOOGLE </title>
+</head>    
+<body>
+<script type="text/javascript">
+
+
+ let allUser = [];
+
+ let storeAddv = (userId,...addresToStore) =>
+ {
+    
+     allUser.push({userId:userId,userAddress:addresToStore});
+     console.log(allUser);
+     return allUser; }
+
+     let firstAddress = {
+         "street" : "viva college",
+         "city" : "virar",
+         "state" : "mumbai",
+         "pincode" : 401303,
+         "country" : "india"
+     } 
+     let secondAddress = {
+         "street" : " new viva college",
+         "city" : "virar west",
+         "state" : "mumbai suburn",
+         "pincode" : 401304,
+         "country" : "india"
+     } 
+     storeAddv("vijay jamariya",firstAddress,secondAddress);
+  
+
+  
+  
+
+
+
+
+
+</script>    
+</body>    
+</html>

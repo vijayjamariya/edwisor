@@ -1,0 +1,14 @@
+tast 1:
+ we have to take the pokemon name as input and display the detail of that pokemon 
+ 	i have used one for loop for iteration from 0 to 150 and in that loop i have used one IF condition to match the user input pokemon name with a pokemon name which is in json data.
+ 	and displayed it on console
+
+ task 2:
+ Write a function that takes pokemon’s name as an argument and find out which all pokemon have that name in their “next_evolution” field
+
+ in this problem   i have taken two for loop  1] one is for iteration from 0 to 150 and then i matched user input pokemon name with stored pokemon name and after getting matched   we used second for loop for displaying sub- next evolution pokemon names 
+
+ task 3:
+ Write a function that take a “Weakness” as an input and gives the names of all pokemon who have that Weakness. (check the weakness array in the dataset) 
+
+ in this task logic is simple just took one loop for iteration and through second for loop i matched user input weakness with stored weaknesses and then i stored pokemon name into variable and displayed it 

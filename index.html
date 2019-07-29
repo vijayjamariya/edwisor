@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+        <title> CHALUWEBSITE </title>  
+</head>
+<body> 
+<script type="text/javascript">
+
+        var isTopper = false
+
+        var marksObtaine = window.prompt('Please Enter Your Obtained Marks')
+
+        if(marksObtaine == undefined || marksObtaine == null || marksObtaine == '')
+        {
+                alert('Enter Valid Input')
+        }
+        else if(marksObtaine < 0 || marksObtaine > 100)
+        {
+                alert('Enter A Number Between 0 To 100')
+        }
+        else{
+                marksObtaine = Number(marksObtaine)
+                var totalMarks = 100
+                var percentageObtaine = (marksObtaine / totalMarks) * 100
+
+                //using  if else
+                if(percentageObtaine > 90)
+                {
+                        isTopper = true
+                }
+                else
+                {
+                        isTopper = false
+                }
+
+                
+                //using turnary operator
+                isTopper = (percentageObtaine > 90)?true:false
+
+                alert(isTopper)
+        }
+  
+</script>
+</body>
+</html> 

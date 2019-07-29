@@ -1,0 +1,86 @@
+<html>
+<head>
+    <title> GOOGLE </title>
+</head>
+<body>
+    <script type = "text/javascript">
+
+        var users = [{
+                        'email' : 'vijay@gmail.com',
+                        'password' : 'vijay123',
+                        'firstname' : 'vijay',
+                        'lastname' : 'jamariya',
+                        'mobileno' : 8976717076,
+                        'isverified' : true,
+                        'ispaid' : true
+        },
+        {
+                        'email' : 'jay@gmail.com',
+                        'password' : 'jay123',
+                        'firstname' : 'jay',
+                        'lastname' : 'jamariya',
+                        'mobileno' : 8876717076,
+                        'isverified' : true,
+                        'ispaid' : false
+        },
+        {
+                        'email' : 'vipul@gmail.com',
+                        'password' : 'vipul123',
+                        'firstname' : 'vipul',
+                        'lastname' : 'jamariya',
+                        'mobileno' : 8176717076,
+                        'isverified' : false,
+                        'ispaid' : false
+        }
+
+        ];
+
+        var checkLogin = function(email, password, allUsers)
+        {
+            isUserFound = false
+            passwordCorrect = false
+
+            for(currentUser in allUsers)
+            {   
+                console.log(allUsers[currentUser])
+                if(allUsers[currentUser]['email'] == email)
+                {
+                    if(allUsers[currentUser]['password'] == password)
+                    {
+                        isUserFound = true
+                        passwordCorrect = true
+                        break
+                    }
+                    else{
+                        isUserFound = true
+                        passwordCorrect = false
+                        break
+                    }
+                }
+                else
+                {
+                    isUserFound = false
+                }
+            }
+
+            if(isUserFound == true && passwordCorrect == true)
+            {
+                alert('You Are Succesfull Login')
+            }
+            else if(isUserFound == true && passwordCorrect == false)
+            {
+                alert('You Provide Wrong Password')
+            }
+            else{
+                alert('You Provided Wrong Email')
+            }
+
+        }    
+    
+
+    var email = window.prompt('Enter Your Email ')
+    var password = window.prompt('Enter Your Password')
+    checkLogin(email, password, users)  
+    </script>
+</body>    
+</html>    

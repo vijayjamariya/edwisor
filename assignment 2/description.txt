@@ -1,0 +1,27 @@
+task 1:
+Convert the following two functions written in simple Javascript to ES6. Try and use as many features of ES6 as you can.
+
+-> in this task  i have changed according to ES6 language  where   i have used arrow function , REST ,const keyword and for OF loop
+
+
+task 2:
+
+Write a function that takes Season number and episode number as input and gives all the information about that particular episode as output.
+
+->  in  this task firstly i have calculated the length of array and then i compare episode number and season number in if condition  and displayed it 
+
+task 3:
+Write a function that can take any number of episode ids as input and returns all the information about those episodes.
+
+-> in this task  i am taking one number from user which is total no. of ids    and then   i used one for loop for taking ids from users and then i stored these ids name into array.
+i took two loop, one is for iteration of no. of ids and second is for iteration of 248 times (length of no. of episodes) .
+then i used if condition for matching ids and displayed all.
+
+task 4:
+ Write a function to search episode by its name.
+
+ -> in this task i have taken a name of episode from user and search that name into given data  , for that i used one for loop for iteration till last episode and taken one if condition . using if condition i matched each episode name with user input episode name then displayed it.
+
+
+ name :
+  ashish mangukiya
